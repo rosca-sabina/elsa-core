@@ -1,0 +1,6 @@
+@MemoryLeakReproWebApi_HostAddress = http://localhost:5241
+
+GET {{MemoryLeakReproWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

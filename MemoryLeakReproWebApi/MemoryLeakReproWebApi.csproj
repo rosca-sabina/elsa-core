@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <!--<PackageReference Include="Elsa" Version="3.2.0" />
+    <PackageReference Include="Elsa.MassTransit.RabbitMq" Version="3.2.0" />
+    <PackageReference Include="Elsa.MongoDb" Version="3.2.0" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\bundles\Elsa\Elsa.csproj" />
+    <ProjectReference Include="..\src\modules\Elsa.MongoDb\Elsa.MongoDb.csproj" />
+  </ItemGroup>
+
+</Project>
